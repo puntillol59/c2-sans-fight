@@ -57,6 +57,18 @@
 	})();
 	</script>
 	
+	<script>
+		window.addEventListener("gamepadconnected", (event) => {
+  		  console.log("A gamepad connected:");
+ 	 	  console.log(event.gamepad);
+                });
+
+		window.addEventListener("gamepaddisconnected", (event) => {
+  		  console.log("A gamepad disconnected:");
+                  console.log(event.gamepad);
+		});
+	</script>
+	
 	<!-- The canvas must be inside a div called c2canvasdiv -->
 	<div id="c2canvasdiv">
 	
